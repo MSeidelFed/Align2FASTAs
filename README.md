@@ -26,7 +26,7 @@ Target FASTA sequences are all the *Hv* Swiss-prot sequences from UniProt.
 If we plot the matching scores across alignments, it becomes evident that not all alignements are high quality
 
 ```
-plot(sort(x = as.numeric(Swiss_Prot351_Hv[,2]), decreasing = F)) + abline(h = 0, col = "red")
+plot(sort(x = as.numeric(aligned_example[,2]), decreasing = F)) + abline(h = 0, col = "red")
 ```
 
 ![Matching_Scores](/plot_zoom.png)

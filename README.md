@@ -5,7 +5,7 @@ Align two FASTA files. The function needs one source file and one target file, a
 Example:
 
 ```
-aligned_example <- align2FASTAS(
+aligned_example <- align2FASTAs(
 
 FASTA_target_directory = "Input/uniprot-hordeum+vulgare-filtered-reviewed_yes+AND+organism__Hordeum+vulgar--.fasta", 
 FASTA_source_directory = "Input/160517_Hv_IBSC_PGSB_r1_proteins_HighConf_REPR_annotation.fasta"

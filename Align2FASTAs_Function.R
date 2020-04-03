@@ -1,4 +1,4 @@
-align2FASTAS <- function(FASTA_target_directory, FASTA_source_directory) {
+align2FASTAs <- function(FASTA_target_directory, FASTA_source_directory) {
   
   if(!require(seqinr)){install.packages("seqinr"); require(seqinr)}
   library(seqinr)

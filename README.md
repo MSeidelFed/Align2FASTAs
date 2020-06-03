@@ -7,6 +7,16 @@ The alignment that this function performs is a dependency of the pairwiseAlignme
 Example:
 
 ```
+## dependencies
+
+if(!require(seqinr)){install.packages("seqinr"); require(seqinr)}
+library(seqinr)
+  
+if(!require(Biostrings)){BiocManager::install("Biostrings"); require(Biostrings)}
+library(Biostrings)
+
+## example
+
 aligned_example <- align2FASTAs(
 
 FASTA_target_directory = "uniprot-hordeum+vulgare-filtered-reviewed_yes+AND+organism__Hordeum+vulgar--.fasta", 

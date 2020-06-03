@@ -1,11 +1,5 @@
 align2FASTAs <- function(FASTA_target_directory, FASTA_source_directory) {
-  
-  if(!require(seqinr)){install.packages("seqinr"); require(seqinr)}
-  library(seqinr)
-  
-  if(!require(fitdistrplus)){BiocManager::install("Biostrings");     require(fitdistrplus)}
-   library(Biostrings)
-  
+    
   ##https://www.rdocumentation.org/packages/qdapTools/versions/1.3.3/topics/list2df
   list2df <- function(x) 
 { 

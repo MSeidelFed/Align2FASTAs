@@ -18,7 +18,7 @@ FASTA_source_directory = "160517_Hv_IBSC_PGSB_r1_proteins_HighConf_REPR_annotati
 
 In the provided example we aligned Swiss-prot/Uniprot sequence targets with proteogenomics predicted *Hordeum vulgare* ORFs as source.
 
-Source FASTA sequences was obtained from the 2017 Barley genome release (ftp://ftpmips.helmholtz-muenchen.de/plants/barley/genome_release2017/)
+Source FASTA sequences were obtained from the 2017 Barley genome release (ftp://ftpmips.helmholtz-muenchen.de/plants/barley/genome_release2017/)
 
 Target FASTA sequences are all the *Hv* Swiss-prot sequences from UniProt.
 

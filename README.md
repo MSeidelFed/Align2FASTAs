@@ -23,6 +23,30 @@ FASTA_target_directory = "uniprot-hordeum+vulgare-filtered-reviewed_yes+AND+orga
 FASTA_source_directory = "160517_Hv_IBSC_PGSB_r1_proteins_HighConf_REPR_annotation.fasta"
 
                                 )
+                                
+## mining out a results table
+
+FASTA_target <- seqinr::read.fasta("uniprot-hordeum+vulgare-filtered-reviewed_yes+AND+organism__Hordeum+vulgar--.fasta")
+
+FASTA_Header_runner <- c()
+
+FASTA_sequence_runner <- c()
+
+for (i in 1:length(FASTA_target)) {
+    
+    FASTA_Header_runner[i] <- seqinr::getAnnot.SeqFastaAA(FASTA_target[[i]])
+    
+    FASTA_sequence_runner[i] <- paste0(seqinr::getSequence(FASTA_target[[1]]), collapse = "")
+    
+}
+
+out_mat <- cbind(FASTA_Header = FASTA_Header_runner,
+                 FASTA_Sequence = FASTA_sequence_runner,
+                 aligned_example)
+
+write.table(x = out_mat, file = "aligned_AT_HV.txt", sep = "\t",
+            row.names = F, quote = F)
+
 ```
 
 
